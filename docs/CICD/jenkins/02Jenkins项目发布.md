@@ -9,7 +9,8 @@
 
 拓扑图
 
-![image-20240803080419577](W:\images\image-20240803080419577-17226434738821.png)
+![image-20240803080419577-17226434738821](https://github.com/user-attachments/assets/62898ea4-c864-4bd1-879a-f59995e608b0)
+
 
 ## 资源列表
 
@@ -103,11 +104,12 @@ external_url 'http://192.168.93.102'
 
 - 访问gitlab地址：http://192.168.93.102
 
-![image-20240803082354694](W:\images\image-20240803082354694.png)
+![image-20240803082354694](https://github.com/user-attachments/assets/65a60457-bdf1-463d-bb21-67d33be4916b)
 
-![image-20240803082442874](W:\images\image-20240803082442874.png)
+![image-20240803082442874](https://github.com/user-attachments/assets/bd0be97d-02da-4df4-9019-e4689305d43f)
 
-![image-20240803082514004](W:\images\image-20240803082514004.png)
+![image-20240803082514004](https://github.com/user-attachments/assets/c80a7285-f44d-42c9-8ee4-2c99fbddfb5b)
+
 
 ### 1.6、推送代码
 
@@ -160,7 +162,7 @@ external_url 'http://192.168.93.102'
 
 - 详细步骤省略
 
-![image-20240803084746892](W:\images\image-20240803084746892.png)
+![image-20240803084746892](https://github.com/user-attachments/assets/0e741adf-090e-4b98-b582-32acb21df6cc)
 
 ### 2.2、在Jenkins中添加远程主机
 
@@ -175,23 +177,31 @@ external_url 'http://192.168.93.102'
   - 最后保存设置
   - 可以用同样的方式添加更多的主机
 
-![image-20240803085335786](W:\images\image-20240803085335786.png)
+![image-20240803085335786](https://github.com/user-attachments/assets/33fffcff-a753-4b8e-b912-90181ea929c4)
 
-![image-20240803085520017](W:\images\image-20240803085520017.png)
 
-![image-20240803085602212](W:\images\image-20240803085602212.png)
+![image-20240803085520017](https://github.com/user-attachments/assets/a6973bd6-479a-45c6-b8a8-599fe4f15776)
 
-![image-20240803085644324](W:\images\image-20240803085644324.png)
+![image-20240803085602212](https://github.com/user-attachments/assets/4d6ed927-ee8d-4d00-809d-7bebb8e81e26)
+
+
+![image-20240803085644324](https://github.com/user-attachments/assets/4b1758ad-23ac-40bb-b0b6-8aad72c66fa2)
+
 
 ### 2.3、获取gitlab项目的URL地址
 
-![image-20240803085816503](W:\images\image-20240803085816503.png)
+![image-20240803085816503](https://github.com/user-attachments/assets/9e70771d-4d3d-4aae-8571-91d9ddc89208)
+
+
 
 ### 2.4、在Jenkins中创建webtest项目
 
-![image-20240803085858051](W:\images\image-20240803085858051.png)
+![image-20240803085858051](https://github.com/user-attachments/assets/33b4ba14-b9c6-4092-ae2e-b80de1d04ef3)
 
-![image-20240803085932603](W:\images\image-20240803085932603.png)
+
+
+![image-20240803085932603](https://github.com/user-attachments/assets/1c9e71be-984a-4c5d-9367-52f7517bbcdb)
+
 
 ### 2.5、配置源码管理
 
@@ -201,7 +211,8 @@ external_url 'http://192.168.93.102'
 [root@jenkins ~]# yum -y install git
 ```
 
-![image-20240803090325031](W:\images\image-20240803090325031.png)
+![image-20240803090325031](https://github.com/user-attachments/assets/e06debb4-d628-452e-b5e4-441528362f6c)
+
 
 ### 2.6、配置构建过程
 
@@ -213,21 +224,23 @@ external_url 'http://192.168.93.102'
   - Remote directory：远程主机的同步目录，注意这里也是相对路径。是相对于远程主机的同步目录的，我们在前面的远程主机中设置同步的目录是“/var/www/html”，此处就直接些“/”，代表将文件同步到远程主机的“/var/www/html”目录下
   - 如果需要将文件批量同步到更多的主机，可以继续增加构建步骤。
 
-![image-20240803090928486](W:\images\image-20240803090928486.png)
+![image-20240803090928486](https://github.com/user-attachments/assets/4121e066-9468-47ce-b075-c86e4fb409d7)
 
-![image-20240803091146699](W:\images\image-20240803091146699.png)
+![image-20240803091146699](https://github.com/user-attachments/assets/453026f6-db10-4a25-9062-7588c71a8845)
 
 ### 2.7、构建项目
 
 - 点击Jenkins项目，点“Build Now”或“立即构建”，如果成功将会在左下角看到绿色的标识
 
-![image-20240803091324761](W:\images\image-20240803091324761.png)
+![image-20240803091324761](https://github.com/user-attachments/assets/690f5bb7-42b2-453a-a0be-e8c5c746525b)
+
 
 ### 2.8、访问验证
 
 - 访问地址：http://192.168.93.103/bl-first-index.html
 
-![image-20240803091420556](W:\images\image-20240803091420556.png)
+![image-20240803091420556](https://github.com/user-attachments/assets/4c137018-e44e-4bb5-8dc9-6c7ccb7a3c70)
+
 
 ## 三、Jenkins发布带有参数的项目
 
@@ -237,59 +250,67 @@ external_url 'http://192.168.93.102'
 
 - 勾选“This project js parameterized”，并点击“添加参数”，添加“Git Parameter”参数。设置的参数如下：名称：Tag 默认值：origin/main
 
-![image-20240803092231758](W:\images\image-20240803092231758.png)
+![image-20240803092231758](https://github.com/user-attachments/assets/2221cde5-26bb-44e4-8125-e9df80674320)
 
-![image-20240803092302835](W:\images\image-20240803092302835.png)
+
+![image-20240803092302835](https://github.com/user-attachments/assets/d844edad-bd0e-4b89-b12f-921f91b634dd)
+
 
 ### 3.2、修改源码管理
 
-![image-20240803092347282](W:\images\image-20240803092347282.png)
+![image-20240803092347282](https://github.com/user-attachments/assets/099056ca-9c9e-4ae2-9648-6a2a7dc23e5d)
+
 
 ### 3.3、构建项目
 
 - 点击“Build Now”立即构建。额可以看到此处需要选择对应的标签版本
 - v1.0没有index.html页面，v2.0有index.html页面
 
-![image-20240803092512834](W:\images\image-20240803092512834.png)
+![image-20240803092512834](https://github.com/user-attachments/assets/579c85da-0490-412d-9b7a-ddd4e2adb6af)
+
 
 ## 四、Jenkins项目实时自动触发
 
 - 在配置Jenkins实现前端自动化构建的过程中，Git如何通知Jenkins对应Job的工作区实时构建呢？web开发过程中的webhook，是一种通过通常的callback，去增加或者改变web page或者web app行为的方法。这些callback可以由第三方用户和开发维持当前，修改，管理，而这些使用者与网站或者应用的原始开发并没有关联。
 - webhook这个词是由Jeff Lindsay在2007年计算机科学hook项目第一次提出的。Webhooks是“user-defined HTTP回调”。它们通常由一些事件触发，例如“push”代码到repo，或者“post一个评论道博客”。因此，我们可以将Jenkins的某个项目的webhook放置到gitbal，当gitlab中对应的项目代码有更新时，就会向jenkins触发一个构建的事件，这样就完成了一个项目自动触发的流程。
 
-![image-20240803093151458](W:\images\image-20240803093151458.png)
+![image-20240803093151458](https://github.com/user-attachments/assets/fb9a90e8-cee3-4573-a640-aed83b091f4e)
+
 
 ### 4.1、设置触发器
 
 - 项目——>“配置”——>“构建触发器”，勾选项目的webhook
 - 复制出里面的webhook URL
 
-![image-20240803093356607](W:\images\image-20240803093356607.png)
+![image-20240803093356607](https://github.com/user-attachments/assets/c6a4e7f8-3f0c-4190-b00f-faf987ef8c8a)
 
 ### 4.2、生成token
 
 - 在“构建触发器”中生成一个Token，并且把这个Token复制出来
 
-![image-20240803093520719](W:\images\image-20240803093520719.png)
+![image-20240803093520719](https://github.com/user-attachments/assets/42a3f94d-fd70-4281-a04e-3f0b252461ec)
 
-![image-20240803093545659](W:\images\image-20240803093545659.png)
+![image-20240803093545659](https://github.com/user-attachments/assets/9b4dcefe-8ba7-43be-bfbb-4d5b120efdd8)
+
 
 ### 4.3、gitlab触发
 
 - 单击Menu——>“Admin”
 
-![image-20240803093646671](W:\images\image-20240803093646671.png)
+![image-20240803093646671](https://github.com/user-attachments/assets/c9d44386-ca99-41ce-b648-9df48257faf7)
 
 ### 4.4、Outbound requests
 
 - 在这里要设置gitlab允许利用钩子（webhook）发送请求到本地网络
 - 设置如下：Menu——>”Admin“——>"Settings"——>”Network“——>”Outbound requests“
 
-![image-20240803093854356](W:\images\image-20240803093854356.png)
+![image-20240803093854356](https://github.com/user-attachments/assets/99a94ab1-1d76-4eaa-9711-7c6435eac31d)
 
-![image-20240803093953998](W:\images\image-20240803093953998.png)
 
-![image-20240803094032859](W:\images\image-20240803094032859.png)
+![image-20240803093953998](https://github.com/user-attachments/assets/42143a58-b8e4-4e87-b4a8-fd0289048bb8)
+
+![image-20240803094032859](https://github.com/user-attachments/assets/5c1f7c5b-7130-493c-b066-a194dc4ddb31)
+
 
 ### 4.5、设置项目的webhook
 
@@ -297,19 +318,23 @@ external_url 'http://192.168.93.102'
 - 粘贴前面步骤中生成的webhook的URL和Token
 - 最后点击页面底部的Add Webhook按钮
 
-![image-20240803094223178](W:\images\image-20240803094223178.png)
+![image-20240803094223178](https://github.com/user-attachments/assets/d7688527-6011-432d-bb14-9850b298ef37)
 
-![image-20240803094243976](W:\images\image-20240803094243976.png)
 
-![image-20240803094358656](W:\images\image-20240803094358656.png)
+![image-20240803094243976](https://github.com/user-attachments/assets/633b8e5b-0713-49d3-93a0-4ae0b9a39f9e)
 
-![image-20240803094411943](W:\images\image-20240803094411943.png)
+![image-20240803094358656](https://github.com/user-attachments/assets/fa0ce448-2bb3-40aa-80fb-dcbecfccea1f)
+
+
+![image-20240803094411943](https://github.com/user-attachments/assets/374fb060-ec5b-4ee3-9ce2-4e9a20a50b58)
 
 ### 4.6、触发测试
 
-![image-20240803094448770](W:\images\image-20240803094448770.png)
+![image-20240803094448770](https://github.com/user-attachments/assets/513d1ecf-00ca-4838-82af-c8629372dc40)
 
-![image-20240803094509509](W:\images\image-20240803094509509.png)
+
+![image-20240803094509509](https://github.com/user-attachments/assets/6a48e92b-ed1b-4b22-8af5-c83ee2d4b33e)
+
 
 ### 4.7、手动触发测试
 
@@ -333,7 +358,8 @@ external_url 'http://192.168.93.102'
 [root@dev demo]# git push -u origin main
 ```
 
-![image-20240803094910844](W:\images\image-20240803094910844.png)
+![image-20240803094910844](https://github.com/user-attachments/assets/4b9b1176-6c59-414f-8c8d-205436a5662e)
+
 
 ## 五、Jenkins+ansible+gitlab实现项目发布
 
@@ -369,17 +395,21 @@ EOF
 
 ### 5.3、Jenkins创建webansible项目
 
-![image-20240803100300359](W:\images\image-20240803100300359.png)
+![image-20240803100300359](https://github.com/user-attachments/assets/47c8f550-694d-4c5d-86bb-67492007beca)
+
 
 ### 5.4、配置General
 
-![image-20240803100347208](W:\images\image-20240803100347208.png)
+![image-20240803100347208](https://github.com/user-attachments/assets/ea6faaea-fe9c-41c6-9ea9-b2ee17b833a0)
 
-![image-20240803100428464](W:\images\image-20240803100428464.png)
+
+![image-20240803100428464](https://github.com/user-attachments/assets/df0e7385-d191-4cca-b14e-0eeee3369c78)
+
 
 ### 5.5、配置源码管理
 
-![image-20240803100543501](W:\images\image-20240803100543501.png)
+![image-20240803100543501](https://github.com/user-attachments/assets/687d0172-60b8-41f4-a464-d4fbae08e8d6)
+
 
 ### 5.6、配置Build Steps
 
@@ -398,11 +428,12 @@ rsync_opts=--exclude=.git：同步时将.git文件除外，该文件不同步
 delete=yes：使两边的内容一样（即以推送方为主）
 ```
 
-![image-20240803101205333](W:\images\image-20240803101205333.png)
+![image-20240803101205333](https://github.com/user-attachments/assets/b541a1f6-82fd-4296-a7f1-596bfaf2ee22)
+
 
 ### 5.7、增加构建步骤
 
-![image-20240803101252411](W:\images\image-20240803101252411.png)
+![image-20240803101252411](https://github.com/user-attachments/assets/e6778cf3-eaab-456a-9506-cd5b58d826ff)
 
 ```bash
 # 使用ansible给web节点的网页重新授权
@@ -416,11 +447,13 @@ ansible webservers -m shell -a "chmod -R 755 /var/www/html"
 [root@web02 ~]# yum -y install rsync
 ```
 
-![image-20240803101416960](W:\images\image-20240803101416960.png)
+![image-20240803101416960](https://github.com/user-attachments/assets/b0a04005-83b1-46d4-94aa-6694163a997f)
+
 
 ### 5.8、构建项目
 
-![image-20240803101645619](W:\images\image-20240803101645619.png)
+![image-20240803101645619](https://github.com/user-attachments/assets/b35e6529-fa07-44cb-b6cf-86fd5b6d8c20)
+
 
 ### 5.9、验证
 
@@ -442,6 +475,8 @@ bl-about.html   bl-first-index.html    font-awesome  jquery     screenshots
 
 - 也可以浏览器进行访问，两个网站内容一样
 
-![image-20240803101913721](W:\images\image-20240803101913721.png)
+![image-20240803101913721](https://github.com/user-attachments/assets/c0ca2888-3282-4f93-a275-26dc9bd5424f)
 
-![image-20240803101924196](W:\images\image-20240803101924196.png)
+
+![image-20240803101924196](https://github.com/user-attachments/assets/df861ef7-383b-4f40-ab19-7d80c6cea9a1)
+
